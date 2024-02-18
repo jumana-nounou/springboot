@@ -1,7 +1,7 @@
 FROM openjdk:11-jre-slim
 
 WORKDIR /spring-boot-mysql-example
-Run mvn clean install -DskipTests
+# Run mvn clean install
 # Copy the JAR file (/app)
 COPY /target/*.jar ./java.jar
 
