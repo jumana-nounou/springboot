@@ -17,7 +17,8 @@ jobs:
     - name: Set up JDK
       uses: actions/setup-java@v2
       with:
-        java-version: '17'  # Change this to your desired Java version
+        distribution: 'adopt'
+        java-version: '11'  # Change this to your desired Java version
 
     - name: Build JAR
       run: |
