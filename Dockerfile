@@ -1,4 +1,4 @@
-FROM openjdk:latest-jre-slim
+FROM openjdk:11-jre-slim
 
 # WORKDIR /spring-boot-mysql-example
 # Run mvn clean install
