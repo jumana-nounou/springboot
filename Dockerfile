@@ -1,9 +1,9 @@
-FROM openjdk:11-jre-slim
+FROM openjdk:latest-jre-slim
 
-WORKDIR /spring-boot-mysql-example
+# WORKDIR /spring-boot-mysql-example
 # Run mvn clean install
 # Copy the JAR file (/app)
-COPY ./target/*.jar ./java.jar
+COPY ./target/*.jar java.jar
 
 # Expose the port the app runs on
 EXPOSE 8080
