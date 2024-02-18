@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - name: Checkout repository
@@ -17,11 +17,11 @@ jobs:
     - name: Set up JDK
       uses: actions/setup-java@v2
       with:
-        java-version: '11'  # Change this to your desired Java version
+        java-version: '21'  # Change this to your desired Java version
 
     - name: Build JAR
       run: |
-        ./mvnw package  # Use this command if you're using Maven
+        ./mvn package  # Use this command if you're using Maven
         # or
         # ./gradlew build  # Use this command if you're using Gradle
 
