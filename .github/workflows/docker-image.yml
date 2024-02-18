@@ -17,7 +17,7 @@ jobs:
     - name: Set up JDK
       uses: actions/setup-java@v2
       with:
-        java-version: '21'  # Change this to your desired Java version
+        java-version: '17'  # Change this to your desired Java version
 
     - name: Build JAR
       run: |
@@ -26,9 +26,6 @@ jobs:
         # ./gradlew build  # Use this command if you're using Gradle
 
     - name: Build Docker image
-      uses: docker/setup-buildx-action@v1
-      with:
-        version: v0.7.0
       run: |
         docker build . -t spring-boot-1
 
