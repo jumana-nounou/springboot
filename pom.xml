@@ -5,7 +5,7 @@
 
 	<groupId>guru.springframework</groupId>
 	<artifactId>spring-boot-mysql</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<packaging>jar</packaging>
 
 	<name>spring-boot-mysql</name>
@@ -21,16 +21,23 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<spring.datasource.driver-class-name>com.mysql.cj.jdbc.Driver</spring.datasource.driver-class-name>
 		<java.version>1.8</java.version>
 	</properties>
 
 	<dependencies>
 
 		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 
+
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.28</version>
+</dependency>
 		<dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-core</artifactId>
