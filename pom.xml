@@ -4,8 +4,8 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>guru.springframework</groupId>
-	<artifactId>spring-boot-mysql</artifactId>
-	<version>0.0.1</version>
+	<artifactId>spring-boot-</artifactId>
+	<version>1</version>
 	<packaging>jar</packaging>
 
 	<name>spring-boot-mysql</name>
