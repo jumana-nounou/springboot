@@ -1,0 +1,23 @@
+name: Deploy to Kubernetes
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Setup kubectl
+      uses: azure/setup-kubectl@v1
+      with:
+        version: 'latest'  # You can specify the version you need here
+
+    - name: Apply Kubernetes Deployment
+      run: |
+        kubectl apply -f deployment.yaml
