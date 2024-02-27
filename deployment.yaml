@@ -13,7 +13,7 @@ spec:
         app: my-app
     spec:
       containers:
-      - name: my-app-container
-        image: nginx:latest
+      - name: nostalgic_snyder
+        image: spring-boot-1:latest
         ports:
-        - containerPort: 81
+        - containerPort: 80
